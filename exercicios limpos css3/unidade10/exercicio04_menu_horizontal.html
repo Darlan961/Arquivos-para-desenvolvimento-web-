@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS - Menu Vertical</title>
+		<style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:13px;
+            }
+
+            nav ul {
+                text-align: center;    
+
+            }
+
+            nav ul li {
+                 list-style-type: none;/*titando os pontinhos*/  
+                 display: inline; /*deixando o menu horizontal*/
+               
+
+            }
+
+            nav ul li a {
+                text-decoration: none; /*tirando o riscado*/
+                padding: 10px 30px;  /*10px para coma e para baixo e 30px direita e esquerda*/
+                background-color:cornflowerblue;/*cor do fundo*/
+                color: #fff; /*cor da palavra*/
+                display: inline-block;
+                margin-right: -3px;/*quando colocamos um menu na horizontal ele vem com uma definição de spaço padrão então coloca-se  -2px para diminuir o espaçamento entr um elemento e outro*/
+                border-radius: 5px;
+            
+            
+            }
+            /*Quando passar o mause por cima mudar de cor*/
+            nav ul li a:hover {
+                 background-color:darkslateblue ;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="brasil.html">Brasil</a></li>
+                <li><a href="portugal.html">Portugal</a></li>
+                <li><a href="angola.html">Angola</a></li>
+                <li><a href="mocambique.html">Moçambique</a></li>
+                <li><a href="caboverde.html">Cabo Verde</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

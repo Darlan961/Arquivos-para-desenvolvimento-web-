@@ -1,0 +1,214 @@
+<!doctype html>
+<html >
+  <head>
+    <title>Revisão menus </title>
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/estilo.css" rel="stylesheet">
+
+    <style>
+     .row{
+         margin-top: 60px;
+     }
+
+     /*  PARA P RIMEIRO MENU
+     Tirado o ricado do nome e quando passa o mouse por cima também 
+     a:link:hover{
+       text-decoration: none; 
+     }
+    
+
+     link que foi visitado 
+    a:visited {
+        color: #f0f8ff;
+    }
+   */
+      h1{ margin-top: 50px ; }
+  
+    
+    </style>
+        
+    </head>
+
+
+    <body>
+     
+           
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                    <section class="container">
+                     
+                        <div class="navbar-header">
+                                 
+                              <!--class="navbar-toggle collapsed"  -> barra-alternar colapso 
+                                    data-toggle="collapse" -> dados-alterna = "colapso"
+                                    data-target = "#movelmenu" -> dados-alvo faz a ligação do id movealvo com esse botão
+                                    arial-expanded = "false" -> não vai aparecer quando estiver escondido só quando estiver menor
+                                 -->
+                                    <button type="button"
+                                            class="navbar-toggle collapsed"
+                                            data - toggle = "collapse"
+                                            data-target = "#movelmenu"
+                                            arial-expanded = "false">
+                                    
+                                            <span class="sr-only"> Toggle navigation</span>
+                                            <span class="icon-bar"></span>  
+                                            <span class="icon-bar"></span> <!-- icon-bar ou seja icone barra --> 
+                                            <span class="icon-bar"></span>  
+                                    </button>
+        
+                                    <a href="#" class="navbar-brand"> <!-- Parte que fica o nome ou marca de alguma empresa-->
+                                            Fonteneblue Café
+                                        </a>
+                        </div>
+                     
+                        
+                        <div class="collapse navbar-collapse" id="movelmenu"><!--colapse é para adaptar o menu a dispositivos móveis -->
+                                                              <!-- id="movelmenu" Esse serve para identificar que emento é esse -->
+                              <ul class="nav navbar-nav">
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="info.html">Info</a></li>
+                                    <li><a href="special-events.html">Special Events</a></li>
+                                    <li class="active"><a href="dvd.html">DVD</a></li>
+                                    <li><a href="location.htm">Location</a></li>
+                                    <li><a href="menu.html">Menu</a></li>
+                                    <li><a href="review.html">Review</a></li>                
+                                </ul>
+                                
+                                <button type="button"
+                                        class="btn btn-primary navbar-btn">Login</button>
+                        </div>
+        
+                    </section>
+                </nav>
+
+       <div class="container">
+<!---------------------------------------------------------------------------------------------------->
+
+                <h1>Revisão de menus </h1>
+           <div class="row">
+                <h3>Menu dropdown</h3>
+                    
+                <div class="dropdown">  
+                    <button type="button"    data-toggle ="dropdown"  class="btn btn-primary"   id="menu"  aria-hespopup = "true"   aria-expanded="true" > Menu Principal 
+                        <span class="caret"></span>
+                    </button> 
+                        <ul class="dropdown-menu" aria-labelledby ="menu">
+                            <li> <a  href="#"> home </a></li>
+                            <li> <a  href="#"> DVD </a></li>
+                            <li> <a  href="#"> Menu </a></li>
+                            <li> <a  href="#"> info </a></li>
+                            <li> <a  href="#"> Location </a></li>
+                        </ul>
+                </div>        
+          </div>
+<!---------------------------------------------------------------------------------------------------->
+
+          <div class="row">
+                  <h3> Menu Que se ajusta ao container</h3>
+                <nav>
+                    <!-- role função-->
+                    <!--btn-group agrupa os botões em forma de menu -->
+                      <div class="btn btn-group btn-group-justified" role="group">
+                            <button type = "button" class="btn btn-warning"> <a href="https://www.udemy.com/" target="blank"> Home </a> </button>
+                            <button type = "button" class="btn btn-warning"> Menu </button>
+                            <button type = "button" class="btn btn-warning"> DVD </button>
+                            <button type = "button" class="btn btn-warning"> Location </button>
+                            <button type = "button" class="btn btn-warning"> Views </button>
+                      </div>
+                </nav>
+
+            </div>
+<!---------------------------------------------------------------------------------------------------->
+ 
+        <div class="row">
+               <h3>Menus com nav </h3>  
+
+             <!-- nav-tabs tipo dom menu -->
+             <!-- nav-justified justificado ele se adapta ao tamanho do container --> 
+               <h4>Menu 1</h4>
+               <ul class="nav nav-tabs nav-justified">
+                     <li> <a href="https://www.udemy.com/"> Home </a></li>
+                     <li> <a href="#"> views </a></li>
+                     <li> <a href="#"> DVD </a></li>
+                     <li> <a href="#"> Location </a></li>
+                     <li> <a href="#"> Menu </a></li>
+                     <li> <a href="#"> info </a></li>
+                 </ul>
+
+             </div>
+<!---------------------------------------------------------------------------------------------------->
+          
+           <div class="row">
+               
+                <h4>Menu 2 </h4>
+            
+                    <ul class="nav nav-pills nav-justified">
+                        <li> <a href="https://www.udemy.com/"> Home </a></li>
+                        <li> <a href="#"> views </a></li>
+                        <li> <a href="#"> DVD </a></li>
+                        <li> <a href="#"> Location </a></li>
+                        <li> <a href="#"> Menu </a></li>
+                        <li> <a href="#"> info </a></li>
+                    </ul>
+
+            </div>
+<!---------------------------------------------------------------------------------------------------->
+
+            <div class="row">
+               
+                <h4>Menu 3 </h4>
+                <!--navbar-inverse deixa o menu com a cor preta e nesse estilo -->
+                <nav>
+                  <div class="navbar navbar-inverse">
+                        <ul class="nav navbar-nav pull-right"> 
+                            <li> <a href="https://www.udemy.com/" target="blank"> Home </a></li>
+                            <li> <a href="#"> views </a></li>
+                            <li> <a href="#"> DVD </a></li>
+                            <li> <a href="#"> Location </a></li>
+                            <li> <a href="#"> Menu </a></li>
+                            <li> <a href="#"> info </a></li>
+                        </ul>
+                  </div>
+                </nav>
+
+            </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="row"> 
+                      <nav>
+                         <div class="navbar navbar-default navbar-fixed-bottom">
+                               <section class="container">     
+                                   <ul class="nav navbar-nav pull-right"> <!-- pull-right puxar para direita o menu fica na direita da pagina --> 
+                                           <li> <a href="https://www.udemy.com/" target="blank"> Home </a></li>
+                                           <li> <a href="#"> views </a></li>
+                                           <li> <a href="#"> DVD </a></li>
+                                           <li> <a href="#"> Location </a></li>
+                                           <li> <a href="#"> Menu </a></li>
+                                           <li> <a href="#"> info </a></li>
+                                       </ul>
+                               </section>
+                         </div>
+                       </nav>
+       
+             </div>
+
+             
+       
+
+
+           
+ <br><br><br><br><br><br>
+       </div>
+ 
+
+        
+          
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="_js/script.js"></script>
+    </body>
+
+    </html>

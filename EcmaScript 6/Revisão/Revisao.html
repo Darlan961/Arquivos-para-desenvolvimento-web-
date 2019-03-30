@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de EcmaScript 6.0</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script type="text/babel">
+         
+
+    /* --------------------------------------------------------------------------------*/    
+      
+        // HOISTING
+       /* O HOISTING torna possível chamar uma função antes de sua declaração, 
+          Isso acontece porque no javascript a função é hoisting, ou seja,
+          ao topo do escopo, no nosso caso GLOBAL*/ 
+    
+        console.log("Usando hoisting" + soma(12,13));
+
+         function soma(n1, n2) {
+             return n1 + n2;
+         }  
+     
+      console.log("\n\n");
+
+  /* --------------------------------------------------------------------------------*/ 
+ 
+   /* Ou seja a variavel do tipo let respeita o escopo da variavel 
+       global sem mudar seu valor. Quando diz que uma variável é let ela é locau 
+       ou seja so serve para */
+
+       /* VARIÁVEL COM LET*/
+
+    var loto = 40; 
+
+     if (loto) {
+         let loto = 10;
+         console.log("Resultado com let : "+ loto);
+     }
+     console.log("Resultado com var :" + loto);
+     console.log("\n\n");
+  
+  /* --------------------------------------------------------------------------------*/ 
+
+      /*TRABALHANDO COM CONSTATE */
+
+      /*Exemplo de uma constante e uma variável com o mesmo nome 
+      pode serem declaradas e usadas mais" NÃO PODEM SER DECLARADAS
+      NO MESMO ESCOPO SE NÃO DARÁ ERRO "*/
+      /* BOA PRÁTICA É SEMPRE USAR O NOME DE UMA CONSTATE 
+     COM LETRAS MAIÚSCULAS */
+
+      const NASCIMENTO = 1994;
+
+      function  calcularIdade(ano) {
+          return ano - NASCIMENTO;
+      }
+      var idade = calcularIdade(2018) ;
+         
+        console.log("Sua idade será " + idade); 
+        console.log("\n\n");
+  /* --------------------------------------------------------------------------------*/ 
+
+         /* Usando template String */
+
+        var nome = "Darlan";
+
+        console.log(`Bom dia  ${nome} `);
+        console.log("\n\n");
+/* Novo elemento, como juntar um texto e uma string sem concatenação*/  
+
+  /* --------------------------------------------------------------------------------*/ 
+       //TRABALHANDO COM O OPERADOR SPREAD '...' 
+
+
+      var citrica  = ["Laranja", "Limão" , "Tangerina"];
+      var rosaceia = ["Maçã", "Pera"];
+      var salada = [ "Banana", ...citrica, " Acerola", ...rosaceia, "Mamão" ];
+        
+      console.log(salada);
+     
+      /* Operador spread ' ... ' coloca um array dentro do outro e ja fica nas posições 
+      do array em ordem crescente  */
+
+  /* --------------------------------------------------------------------------------*/ 
+
+
+
+         </script>
+    </head>
+    <body>
+    
+        <h1> </h1>
+    </body>
+</html>

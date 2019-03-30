@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        <style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:14px;
+            }
+           /*mudando a cor do primeiro elemento (first = primeiro) e (child = filho), ou seja primeiro filha terá a cor fuchsia*/
+           #lista1 li:first-child{
+                color: fuchsia;
+            }
+            /*fazendo para o ultimo elemento*/
+            #lista1 li:last-child{
+                color: blue;
+            }
+            
+            /*escolhendo o segundo elemento*/
+            #lista1 li:nth-child(3){
+                 color: chartreuse;
+                
+            }
+            
+            /*só os elementos impares da tabela*/
+            /* #lista2 li:nth-child(even) elementos pares even */
+            #lista2 li:nth-child(odd){
+                 color: fuchsia;
+            }    
+            
+        </style>
+    </head>
+
+    <body>
+
+        <ul id="lista1">
+            <a href="exercicio01_lista.html"><li>Brasil</li></a>
+            <li>Portugal</li>
+            <li>Angola</li>
+            <li>Moçambique</li>
+            <li>Cabo Verde</li>
+        </ul>  
+     
+    
+        <ul id="lista2">
+            <li>Brasil</li>
+            <li>Portugal</li>
+            <li>Angola</li>
+            <li>Moçambique</li>
+            <li>Cabo Verde</li>
+        </ul>  
+        
+        
+    </body>
+</html>

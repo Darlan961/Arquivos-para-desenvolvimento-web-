@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+             var dias_semana = ["domingo ","Segunda", "terça", "quarta", "quinta", "sexta" ,"sabado", ];
+             var meses = ["janeiro","fevereiro","março","Abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+             
+             var agora = new Date();
+             var dias = dias_semana[agora.getDay()]; 
+            
+        //    var ano = agora.getFullYear()// ano atual 
+             
+             var mes = meses[agora.getMonth()] ;// Mês do ano  
+             
+
+             var diaMes = agora.getDate();  //dia do mês          
+            
+            console.log(dias + ", " + diaMes + " de " + mes + " de " + ano );
+
+          //Resgatando hora dias de anos atras 
+            
+            
+         var aniversario = new Date(1999,6,15) ;   
+            console.log(aniversario.getDay());
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso HTML5 Essencial</title>
+    </head>
+
+    <body>
+        <form action="index.html" method="post">
+            
+        <!-- para fazer o vinculo da data list com input usa-se list i coloca-se o mesmo nome do id de data list-->    
+       <input type="text" list="lojas" name="nome" id="nome_loja" placeholder="Digite o nome da loja" >
+         
+      <datalist id="lojas">
+    <!-- option irá ser as opções de pesquisa -->
+          
+      <option value="Centauro">Centauro</option>
+      <option value="Netshoes">Netshoes</option>
+      <option value="Dafite">Dafite</option>
+      <option value="Lojão">Lojão</option>
+      <option value="Centro de peças">Centro de peças</option>
+      <option value="Centro de beleza">Centro de beleza</option>
+            
+      </datalist>
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Curso de Bootstrap</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="_css/estilo.css" rel="stylesheet">
+       
+       <style>
+           .container{background-color: rgb(208, 218, 190);}
+       </style>
+        
+    </head>
+    <body>
+        <!-- Digite abaixo seu codigo -->
+        <div class="container">
+           
+             <!---  Criando um Dropdown Menu  -->
+            <h4>Criando um dropdown Menu</h4>       
+           
+            <div class="dropdown"> <!--Classe especifica para menu dropdown-->
+                                 
+                  <!--data-toggle ="dropdown" -> dado-alterna ,faz a ligação do botão com a  <ul class="dropdown-menu" > que é a lista  --> 
+                  <!-- class = "btn btn primary" -> dando um estilo ao botão -->
+                 <!--id="menu" Para pessoas que tem algum problema de acessibilidade e faz a ligação com arial-labelledby="menu"  -->
+
+                    <button type="button"    data-toggle ="dropdown"  class="btn btn-primary"   id="menu"  aria-hespopup = "true"   aria-expanded="true" > Menu Principal 
+                          
+                        <span  class="caret"></span> <!--criando um cursor ao lado do nome -->
+
+                    </button>
+                   
+                    <ul class="dropdown-menu" aria-labelledby ="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="special-events.html">Special Events</a></li>
+                        <li><a href="dvd.html">DVD</a></li>
+
+                        <li  role="separator" class="divider"></li><!--separador dentro do menu dropdown-->
+                        
+                        <li><a href="location.htm">Location</a></li>
+                        <li><a href="menu.html">Menu</a></li>                     
+                        <li><a href="review.html">Review</a></li>
+
+                    </ul>
+             </div> 
+            
+
+            
+        </div>
+        <!-- Fim do seu codigo -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="_js/script.js"></script>
+    </body>
+</html>

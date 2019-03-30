@@ -1,0 +1,453 @@
+<!doctype html>
+<html >
+  <head>
+    <title>Revisão bootstrap</title>
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/estilo.css" rel="stylesheet">
+  
+
+    <style>
+        /* h2 é um tag e .h2 é um class do bootstrap que deixa esses h2 do mesmo tamanho */
+       h2{color:blue; }
+      .h2{color: blue; background-color: burlywood;}
+       
+       .container{ border: 1px solid; }
+
+       .cor{background-color:aliceblue; height: 60px; margin-top: 100px;}
+       .aula{text-align: center;}
+  
+      /*centralisando as imagens */
+      .imagem{max-width: 150px; margin:0 auto; display: block ; }  
+       p, h3{text-align: center;}
+
+      
+           
+    </style>
+
+</head>
+  
+
+<body>
+  <div class="container">
+    
+                     <div class="row">
+
+                                <div class="cor">
+                                    <h4 class="aula">Trabalhanco com grid</h4>
+                                </div> 
+                             
+                            <!--Essa elemento vai ter ocupar 4 colonas na grid tamto em telas normais quanto em tela de um celular -->  
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                                <img  src="../img/icone_adobe_portfolio_grande.png" alt="ADOBE" title="ADOBE" class="imagem"  >
+                                <h3>HTML5</h3> 
+                                <p> HTML é a sigla de HyperText Markup Language, expressão inglesa que significa "Linguagem de Marcação
+                                    de Hipertexto". Consiste em uma linguagem  de marcação utilizada para produção de páginas na web,
+                                    que permite a  criação de documentos que podem ser lidos em praticamente qualquer tipo de computador
+                                    e transmitidos pela internete.</p>
+                            </div>
+
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <img  src="../img/icone_css_grande.png" alt="Imagem CSS3" title="CSS3" class="imagem">
+                                <h3>CSS3</h3>
+                                <p>CSS é a sigla para o termo em inglês Cascading Style Sheets, que traduzido para o português 
+                                   significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente
+                                   utilizado com as linguagens de marcação HTML ou XHTML. Mas o que realmente isso quer dizer? 
+                                   O que é CSS além da sigla?</p>
+                            </div>
+                            
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <img  src="../img/icone_adobe_portfolio_grande.png" alt="ADOBE" title="ADOBE"class="imagem">
+                                <h3>ADOBE</h3>
+                                <p>Escolha entre milhões de imagens, gráficos, vídeos, modelos e ativos 3D. Com conteúdo inédito sendo adicionad
+                                   diariamente, encontrar o ideal para você será fácil.Escolha entre milhões de imagens, gráficos, vídeos,
+                                   modelos e ativos 3D. Com conteúdo inédito sendo adicionado diariamente, encontrar o ideal para você será fácil.</p>
+                            </div>
+
+                    </div>
+
+     
+         <div class="row"> <!--FAZENDO A SEPARÇÃO DESSAS 6 IMAGENS COM ROU FACITA O TRABALHO E NÃO PRECISA
+                            USAR A PROPRIEDADE <div class="clearfix visible-sm-block"></div> PARA AJUSTA O CSS 
+                            PORQUE OS ELEMENTOS FICAM BAGUNSSADOS                               -->
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                            <img  src="../img/icone_adobe_portfolio_grande.png" alt="ADOBE" title="ADOBE" class="imagem">
+                            <h3>HTML5</h3> 
+                            <p> HTML é a sigla de HyperText Markup Language, expressão inglesa que significa "Linguagem de Marcação
+                                de Hipertexto". Consiste em uma linguagem  de marcação utilizada para produção de páginas na web,
+                                que permite a  criação de documentos que podem ser lidos em praticamente qualquer tipo de computador
+                                e transmitidos pela internete.</p>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <img  src="../img/icone_css_grande.png" alt="Imagem CSS3" title="CSS3" class="imagem">
+                            <h3>CSS3</h3>
+                            <p>CSS é a sigla para o termo em inglês Cascading Style Sheets, que traduzido para o português 
+                             significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente
+                             utilizado com as linguagens de marcação HTML ou XHTML. Mas o que realmente isso quer dizer? 
+                             O que é CSS além da sigla?</p>
+                        </div>
+                    
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <img src="../img/icone_adobe_portfolio_grande.png" alt="ADOBE" title="ADOBE" class="imagem">
+                            <h3>ADOBE</h3>
+                            <p>Escolha entre milhões de imagens, gráficos, vídeos, modelos e ativos 3D. Com conteúdo inédito sendo adicionad
+                                diariamente, encontrar o ideal para você será fácil.Escolha entre milhões de imagens, gráficos, vídeos,
+                                modelos e ativos 3D. Com conteúdo inédito sendo adicionado diariamente, encontrar o ideal para você será fácil.</p>
+                       </div>
+
+       </div>
+       
+   
+
+
+
+<!----------------------------------------------------------------------------------------------------------------->
+    <div class="row">
+            <div class="cor">
+                 <h4 class="aula">TAG SPAM</h4>
+            </div> 
+
+            <h2>Titulo 2</h2>
+                                                <!--Fazendo com que o h2 fique de mesmo tamanho que o titulo 2 -->
+            <p>Cu mea graece essent alienum,<span class="h2"> First Text </span>  . Has eligendi constituto delicatissimi at, amet
+                epicuri est cu. Nec ridens dignissim ex, no cum atqui exerci, no quo nisl facer reformidans. Minim nostro
+                ne nam, eam in aeque paulo. Ad vis natum alterum deserunt. Te sit nulla audiam percipitur, amet veritus 
+                habemus eos ex, ne modo nibh ocurreret pro.</p>
+                
+    </div>
+            
+<!----------------------------------------------------------------------------------------------------------------->
+
+        <div class="row">
+                <div class="cor">
+                        <h4 class="aula">TRABALHANDO COM ALINHAMENTO DE TEXTO </h4>
+                </div>
+               <!--alinhamento de textos com classes bootstrap-->
+                  
+            <h4>class="text-center" </h4> 
+            <p class="text-center">Dicta tation persequeris sit ad, placerat necessitatibus duo id. Ut mel error mundi contentiones, 
+            ius magna saperet eu, ea stet semper convenire eam. Mei consul legimus at, no rebum omittam mediocritatem vis. 
+            Invenire expetendis eu usu, no est mutat utroque expetenda. Te vis saepe scribentur u, no est mutat utroque expetenda. 
+            Te vis saepe scribentur u, no est mutat utroque expetenda. Te vis saepe scribentur u, no est mutat utroque expetenda. 
+            Te vis saepe scribentur.</p>
+  
+             <!-- class="text-justify" Texto justificado ou suja preenchendo ate o fim e deixando alinhado -->
+                <h4> text-justify</h4>
+                <p class="text-justify">His tamquam liberavisse ad, eu oporteat tacimates qui. Ius ei primis prompta concludaturque, ex labitur minimum est. 
+                Ius sumo congue apeirian an, pericula suscipiantur definitiones sit eu. At vix solet antiopam, ei sanctus albucius
+                interpretaris vel.Ius sumo congue apeirian an, pericula suscipiantur definitiones sit eu. At vix solet antiopam, 
+                ei sanctus albucius</p>
+
+               <h4>text-left</h4>
+                <p class="text-left">Laudem expetenda complectitur cum an. Pro oportere laboramus ad, eu ius dicta senserit, in facilis fuisset eos.
+                    Duo unum veniam volutpat id, diceret epicurei necessitatibus nam eu. Postea expetendis has ei, per quot 
+                    eleifend praesent cu, eos ea wisi mucius splendide. Inimicus suscipiantur delicatissimi eum te.
+                    eleifend praesent cu, eos ea wisi mucius splendide. Inimicus suscipianeleifend praesent cu, eos ea wisi mucius splendide.
+                    Inimicus suscipian</p>
+                
+        </div>
+
+<!----------------------------------------------------------------------------------------------------------------->
+        <div class="row">
+                    <div class="cor">
+                        <h4 class="aula"> LISTA </h4>
+                    </div>
+                
+                <ul class="list-inline"> <!--So com o list-inline ja deixa os nomes horizontais -->
+                    <li><a href="bra.html">Brasil</a></li>
+                    <li>Angola</li>
+                    <li>Uruguai</li>
+                    <li>EUA</li>
+                    <li>Mexico</li>
+                    <li>Africo</li>
+                    <li>Alemanha</li>
+                </ul>
+                        <!--Fazendo com que os elementos fiquem na horizontal -->
+                        <dl class="dl-horizontal">
+                            <dt>Curso de HTML5</dt>
+                            <dd>Nele abordaremos novos elementos estruturais, integração com CSS3 e uso das API Canvas e Geo localização. Curso (re)gravado em 2015, com nova IDE, novas tags, novas técnicas, agora com mais de 5 horas de aula gravada.</dd>
+                            
+                            <dt>Curso de CSS3</dt>
+                            <dd>O curso online CSS 3 Essencial, traz todas as novidades desta formação da principal linguagem de estilo da web. O curso foi desenvolvido para programadores de nível iniciante e intermediário. Nele abordaremos vários assuntos importantes para criação de páginas web.</dd>
+
+                            <dt>Curso de Javascript</dt>
+                            <dd>Capacitar e preparar o aluno a desenvolver páginas com a linguagem que mais cresceu nos últimos anos. Dominar Javascript é obrigatório para todo profissional que deseja criar projetos ligados à web e dispositivos móveis. Neste curso, cobrimos os principais temas, desde princípios básicos até OOP e Fundamentos de Ajax.</dd>
+                        </dl>
+      </div>
+             
+
+    
+
+
+<!----------------------------------------------------------------------------------------------------------------->
+
+       <div class="row"> <!-- Classe row divide elementos de uma paina em linhas cada bloco se torna uma linha -->
+        
+            <div class="cor">
+                    <h4 class="aula">BOTÕES</h4>
+            </div>                 
+                                    <!--BOTÕES-->
+            <!-- btn da vida a tag button -->
+            <!-- btn-primary, btn-secondary, btn-success, btn-info, btn-warning, btn danger, são cores de botões -->
+            <!--btn-xs, btn-sm, btn-md, btn-lg, são os tamanhos dos botões  -->
+
+                <button class="btn btn-primary btn-xs"> primary </button>
+                <button class="btn btn-secondary btn-sm "> secundary </button>
+                <button class="btn btn-success btn-sm"> success </button>
+                <button class="btn btn-info btn-md"> info </button>
+                <button class="btn btn-warning btn-md">warning</button>
+                <button class="btn btn-danger btn-lg">danger</button>
+
+                <button class="btn btn-default btn-block">block</button>
+                <!--btn-default é um botão padrão, btn-block deixa o botão ocupando a tela toda  -->
+                <br>
+                <button class="btn btn-danger disabled">Desabilitado</button>
+                <!-- botão desabilitado -->
+      </div>
+
+<!----------------------------------------------------------------------------------------------------------------->
+
+     <div class="row">  <!--TRABALHANDO COM IMAGENS -->
+       
+             <div class="cor">
+                <h4 class="aula">IMAGENS BOOTSTRAP </h4> 
+             </div>
+
+         
+                <img src="../img/foto.jpg" height="200" width="200" class="img-rounded" >
+                   <!--class="img-rounded deixa a imagem com bordas arredondadas"-->
+                
+                <img src="../img/foto.jpg" height="200" width ="200" class="img-circle">
+                   <!--class="img-circle" deixa a imagem um circulo -->
+                
+                <img src="../img/foto.jpg" height="200" width ="200" class="img-thumbnail">
+                    <!--class="img-thumbnail" deixa a imagens com borda personalisada -->   
+
+               <figure>
+                    <img src="../img/bg_image.jpg" class="img-responsive">
+                      <!--Deixando a imagem responsiva class="img-responsive"-->
+                    <figcaption>Imagem responsiva </figcaption>
+                </figure>
+     </div> 
+
+  <!----------------------------------------------------------------------------------------------------------------->
+     <div class="row"> 
+                <div class="cor">
+                    <h4 class="aula">CORES NO TEXTO, CORES NO BACKGROUND </h4> 
+                </div>
+                            <!--CORES NO TEXTO-->
+
+            <!--class = "text-primary" significa que a cor do texto vai se primary. A  mesma coisa para as outras frases -->      
+            <p class="text-primary">Esse texto é para mostrar a cor com o  primary</p>
+            <p class="text-success">Esse texto é para mostrar a cor com o success </p>
+            <p class="text-info">Esse texto é para mostrar a cor com o info </p>
+            <p class="text-warning">Esse texto é para mostrar a cor com o warning </p>      
+            <p class="text-danger">Esse texto é para mostrar a cor com o  danger</p>  
+
+
+                        <!-- CORES DE BACKGROUND -->
+
+            <!-- class = "bg-primary " significa que a cor do beckgound ou seja cor do fundo vai ser primary que é azul 
+                mesma coisa para as demais frases so que com corese diferentes 
+                -->
+            <p class="bg-primary">Texto para mostra backgound com class = " bg-primary " </p>
+            <p class="bg-success">Texto para mostra a cor com de background com class = " bg-success "</p>
+            <p class="bg-info">Texto para mostra a cor de background com class = " bg-info" </p>
+            <p class="bg-warning">Texto para mostra a cor de background com class = " bg-warning"</p>
+            <p class="bg-danger">Texto para mostra a cor de background com class = " bg-danger"</p>
+     </div>
+
+<!----------------------------------------------------------------------------------------------------------------->
+
+      <div class="row">
+          
+            <div class="cor">
+                    <h4 class="aula">TABELA </h4> 
+            </div>
+            
+                <!--TABALHANDO COM TABELA -->
+
+            <table class="table table-bordered  table-striped table-hover">
+                        <!-- Table personalisa a tabela-->
+                        <!-- Table-border da borada a tabela -->
+                        <!-- Table striped é o zebrado da tabela -->
+                        <!-- Table-hover quando passa o mouse por cima -->
+                        <h2>Tabela teste</h2>
+                        <thead >
+                                <tr>
+                                <td>Países</td>
+                                <td class=" warning">Ouro</td>
+                                <td class="info">Prata</td>
+                                <td>Bonze</td>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td >Brasil</td>
+                                    <td>44</td>
+                                    <td>55</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>Argentina</td>
+                                    <td>10</td>
+                                    <td>22</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td class="danger">Mexico</td>
+                                    <td>15</td>
+                                    <td>33</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>Uruguai</td>
+                                    <td>17</td>
+                                    <td>31</td>
+                                    <td>27</td>
+                                </tr>
+                            </tbody>
+                </table>
+                    
+        </div> 
+<!----------------------------------------------------------------------------------------------------------------->    
+         
+  <!-- TRABALHANDO COM VIDEOS, DEIXANDO VIDEO RESPONSIVO -->
+
+  <div class="row">
+            <div class="cor">
+                <h4 class="aula">VIDEO RESPONSIVO </h4> 
+            </div>
+           
+            <div class="embed-responsive embed-responsive-4by3">           
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Ie56SvXAX4" frameborder="0" allow="accelerometer; autoplay;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+  </div>   
+
+<!----------------------------------------------------------------------------------------------------------------->    
+
+        <br><br>
+        <div class="row">
+                <div class="cor">
+                        <h4 class="aula">TRABALHANDO COM FORMULÁRIOS </h4> 
+                    </div>
+
+
+            <form>
+
+                            <div class="form-group">
+                                <div class="col-xs-4"> 
+                                        <label for="nome"> Nome Completo </label> 
+                                        <input class="form-control" type="text" id="nome" placeholder="Digite seu nome">
+                                         <!--class"form-control" -> Dixa o espaço do campo maior e da um estilo do bootstrap no campo de texto -->
+                                  </div>
+                              </div>
+                    <br><br><br><br>
+
+                            <div class="form-group">
+                                    <label for="email"> Email </label> 
+                                    <input class="form-control input-lg " type="text" id="email" placeholder="Digite seu email">
+                                    <!--class"form-control" -> Dixa o espaço do campo maior e da um estilo do bootstrap no campo de texto -->
+                                     <!--input-lg trabalha com o tamanho da caixa do formulário deixando ela menor --> 
+                            </div>
+                    
+                        <div class="form-group">
+                            <label for="selecao">Estados</label>
+                            <!--input-sm trabalha com o tamanho da caixa de formulário deixando ela menor-->
+                            <select class="form-control input-sm" name="selecao" id="selecao">
+                                    <option>Alagoas</option>
+                                    <option>Rio de janeiro</option>
+                                    <option>São Paulo</option>
+                                    <option>Baia</option>
+                            </select>      
+                        </div>
+
+                        <div class="form-group">
+                                <label for="comentario">Comentários</label>
+                                <textarea class="form-control" id="comentario"></textarea>
+                        </div>
+                        
+                        <div class="checkbox"><!--Div especifica para checkbox -->
+                            <label for="lista">
+                                <input type="checkbox" id="lista">Inscrever-me na newsletter
+                            </label>
+                        </div>
+                    
+                        <div class="form-group">
+                                <input  class="btn btn-primary btn-block  " type="submit"  value="Enviar">
+                                            <!--Dando um estilo ao botão -->
+                        </div>
+
+                        <div class="form-group">
+                            <input  class="btn btn-info pull-right  " type="submit"  value="Enviar">
+                            <!-- Um exemplo de botão ao lado direito da tela com elemento pull-right-->
+                        </div>
+          </form>
+               
+ <!------------------------------------------------------------------------------------------------------------>        
+              <br><br><br> 
+              <!--TRABALHANDO COM CHECKBOX E RADIO -->
+
+              <!--A diferença do radio pro checkbox é que no radio você só pode marca uma opção
+             ja no checkbox so um -->
+             <!--No radio pode marca mais de uma opção porque os elementos names tem o mesmo nome -->
+
+              <div class="cor">
+                    <h4 class="aula">TRABALHANDO COM CHECKBOX E RADIO </h4> 
+                </div>
+
+                    <div class="checkbox"> <!-- class que organiza e da um espaço -->
+                        <label >
+                            <input type="checkbox" value="br">
+                             aceitar termos de liçensa 
+                        </label>
+                    </div>
+                    
+                    <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="br">
+                            Liçensa digital  
+                       </label>
+                    </div>
+
+                    <div class=" radio ">
+                        <label>
+                            <input  type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                            1
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                         <label>
+                              <input type="radio" name="optionsRadios" id="optionRadio2" value="option2">
+                              2
+                         </label> 
+                    </div>
+
+
+
+
+
+
+          </div><!---->
+
+
+<!----------------------------------------------------------------------------------------------------------------->    
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+    </div>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="_js/script.js"></script>
+
+  </body>
+</html>

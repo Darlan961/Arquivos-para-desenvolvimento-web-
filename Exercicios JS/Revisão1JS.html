@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+         //TRABALHANDO COM FUNÇÕES
+         //1) 
+            var base = 5;
+            var altura = 10;     
+            function calcularAreaRetangulo(){
+            var total;
+            total = base*altura;
+            return total;  }
+         
+             var resultado = calcularAreaRetangulo();
+             console.log("Base * Altura : " + resultado);
+        /*/////////////////////////////////////////////*/   
+         //2)
+            function Calcularfatorial(numero){
+                var fat = 1;
+                for(var i = 1 ; i <= numero ; i++){
+                    fat *= i ; 
+                }
+                return fat;  
+            }  
+             var fatorial =  Calcularfatorial(6);
+             console.log("\n O fatorial é : " + fatorial);
+            
+        /*/////////////////////////////////////////////////////*/
+         //3)    
+          function calcularSoma(a,b){
+               var soma = a +b ; 
+               
+            return soma;}   
+            var soma = calcularSoma(123, 333);
+            console.log("A soma será : " + soma);
+            console.log("\n\n");
+            
+            /*--------------------------------------------------*/
+        
+      //TRABALHANDO COM AS PROPRIEDADES DE ARREDONDAMENTO.
+            
+     // Propriedades de arredondamento
+     //roud arredonda normal         
+     //ciel arredonda para cima 
+     //floor arredonda para baixo 
+     //tofixed você escolhe a quantidade de casas decimais
+            
+     var dividendo = 1001;       
+     var divisor = 9 ;   
+     var quociente ;
+            
+     quociente =dividendo / divisor;
+    
+    console.log("Arredondando com o round : " + Math.round(quociente));
+    console.log("Arredondando com o ciel : " + Math.ceil(quociente));
+    console.log("Arredondando com o floor : " + Math.floor(quociente));      
+    console.log ("Arredindando com o tofixed : " + quociente.toFixed(2));     
+    console.log("\n\n");
+    /*------------------------------------------------------------------*/
+    // TRABALHANDO COM ARRAYS        
+     //push insere no final 
+     // unshift insere no começo     
+     // shift retira o elemento do começo         
+     // pop retira o elemento do final 
+     // indexOF mostra em qual indice do vetro aquele elemento está 
+             
+     // var vetor = new Array(10 , 11.5, 12.4, "abacaxi", false, true );
+      var vetor = [10 , 11.5, 12.4, "abacaxi", false, true ]  ;      
+      console.log(vetor);     
+            
+        vetor.push("FINAL"); 
+        vetor.unshift("COMEÇO");    
+        vetor.pop();    
+        vetor.shift();       
+        var posicao = vetor.indexOf(12.4);    
+        console.log("posição do vetor : " + posicao);    
+        console.log("\n\n");
+            
+            
+    /*------------------------------------------------------------------*/
+            
+    // TRABALHANDO COM NUMEROS ALEATÓRIOS         
+     //1)        
+       var sorteio1;      
+       var resultado1;    
+    
+      sorteio1 = Math.ceil(Math.random()*10);              
+      resultado1  = sorteio1;
+      console.log("O sorteio do numero é : " + resultado1);
+      console.log("-------------------------------------");    
+      /*/////////////////////////////////////////////////////*/      
+    //2)
+        var sorteioMegacena;
+        var resultadoMegacena = new  Array();
+        var i = 0 ;    
+             
+      while( i < 6 ){
+          
+        sorteioMegacena = Math.ceil(Math.random()*60);
+          
+         if(resultadoMegacena.indexOf(sorteioMegacena) ==  -1 ){
+          resultadoMegacena.push(sorteioMegacena);
+          i++;  }
+          
+      } 
+        console.log("Numeros sorteados forão");
+        console.log(resultadoMegacena);
+        console.log("\n\n\n");
+        /*//////////////////////////////////////////////////*/    
+            
+    /*---------------------------------------------------------------*/        
+           
+    // TRABALHANDO COM STRINGS    
+     //charAT mostra um caracter ou um conjunto com o while 
+     //substr nesse metodo não precisa de ciclo vc ja diz de onde quer começar na frase ate aonde quer chegar (0 , 7);
+     //split Transforma cada palavra em um indice e vc diz qual indice quer imprimir
+    
+    //1)charAt        
+      var palavra1 ="João Maria José enrique matheus Daniel";           
+      var posicao = palavra1.charAt(6);    
+       console.log("primeira letra com o charAt :"+posicao) ;
+       
+       var i = 0;       
+       var letra = ""; 
+       var uniao = "";    
+       while ( letra != " "){
+           letra = palavra1.charAt(i);
+           uniao += letra;
+           i++;
+        }     
+     console.log("Palavra com charAt : " + uniao);
+    /*////////////////////////////////*/        
+    //2)substr             
+       var palavra2 ="João, Maria, José, enrique, matheus Daniel";        
+       console.log("substr : "+palavra2.substr(0,11))
+            
+      /*////////////////////////////////*/      
+    
+        //3)
+        var palavra3 = "Eu gosto de comer chocolate ";
+     
+        /*(" ")[1] fator divisor e indice*/
+        console.log("split : " + palavra3.split(" ")[1]) 
+        console.log("\n\n\n");    
+       /*////////////////////////////////*/
+    
+    
+        /*---------------------------------*/ 
+              
+     //TRABALHANDO COM DAATAS            
+            
+      var agora = new Date();
+     
+     var Meses= ["janeiro","fevereiro","março","Abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+      var dSemana = ["domingo ","Segunda", "terça", "quarta", "quinta", "sexta" ,"sabado", ];
+            
+      var ano = agora.getFullYear();  
+      console.log(ano);      
+            
+      var mes = Meses[agora.getMonth()];          
+      console.log(mes); 
+            
+      var diaSemana = dSemana[agora.getDay()];
+      console.log(diaSemana);
+            
+      var diaMes = agora.getDate();
+      console.log(diaMes);    
+       
+      console.log(diaMes + "/" + mes + "/" + ano);    
+        
+     //TRABALHANDO COM HORA MINUTOS   
+             
+     console.log(agora.getHours() + ":" + agora.getUTCMinutes());    
+    console.log("\n\n\n");
+    /*////////////////////////////////////////////////////////////*/        
+            
+    // TRABALHANDO COM A CLASSE OBJECT 
+            
+        var produto = new Object();
+        
+         produto.nome = "Boneco dead pool";
+         produto.preco = 55.5 ; 
+         produto.altura= 1.0;
+            
+         console.log(produto.nome);
+        
+        function Mostrar(){
+            return "O preço do boneco é  : " + this.preco;
+        }    
+
+        /*Atribuindo um metodo ao objeto produto*/    
+        produto.info = Mostrar;
+        console.log(produto.info());
+        
+        </script>
+        
+        
+        
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

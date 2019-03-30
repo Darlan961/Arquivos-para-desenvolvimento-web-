@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+       <script src="jquery-3.2.1.min.js"></script>     
+       <script>
+        
+          $(function(e){
+              
+              $('#cursohtml').click(function(e){
+                 alert("Clicou no botão html");   
+              });
+              
+            function mostramensagem (e){  
+                alert("Passou o mouse por cima ");
+                $('#cursocss').off('mouseover' ,mostramensagem); // matando o metodo fazendo que ele só ocorra uma vez;      
+              } 
+              $('#cursocss').on('mouseover'  , mostramensagem); //chamando o a função mostramensagem , No evento                   on ('mouseover') é quando passar o mause por cima mostra o alert ou outro elemento;
+                
+           
+            $('#curso3').click(function(e){  
+                 alert("clicou em c++");
+            });
+            
+            $('#curso4').click(function(){
+              alert("clicou no curso de Jquery");
+            });
+              
+          }); 
+           
+        
+      </script>
+    </head>
+
+    <body>
+         <input type="button" id="cursohtml" value="Curso HTML5" /> 
+         <input type="button" id="cursocss" 	value="Curso CSS3" />
+         <input type="button" id="curso3" 	value="Curso C++" />
+         <input type="button" id="curso4" 	value="Curso Jquery" />
+        
+        
+    </body>
+
+</html>

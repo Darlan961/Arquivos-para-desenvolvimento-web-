@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+    
+        <h2>Formulário</h2>
+        
+     <!--o atributo action vai determinar para qual pagina vão os elementos inseridos no formulário --->  
+     <!-- post serve para quando estiver fazendo uma tela de inserção ou uma tela de login  ai coloca-se post por que os dados serão enviados de forma escondida -->  
+        
+        
+     <form action="teste.html" method="post" >
+         
+        <!--Identificando um campo--> 
+        <!--I o fornome é para direcionar o label com o id da tag input -->   
+       <label for="nome" > Nome completo</label>  
+         
+
+      <!--inserção de texto type="text"-->  
+       <input type="text" name="nome" id="nome" size="30" maxlength="100">  
+        
+        
+         
+         <label for="telefone" >Telefone</label>  
+         
+        <!--inserir um nome no campo de texto-->  <!-- size Quants caracteres vai mostra na largura do campo e maxlength é quantos caracters pode ser digitados --->
+       <input type="text" name="nome" id="telefone" size="30" maxlength="100">
+         
+         
+        <label for="email"> E-mail</label>
+        <input type="text" name="nome" id="email" size="40" maxlength="100"> 
+         
+         <!--Botão de enviar -->
+         <!-- submit é submeter a informação -->
+         <!-- Nome que o usuario irá ver é no value -->
+         
+         <input type="submit" value="Enviar" id="enviar" name="enviar">
+     
+        
+     </form> 
+        
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<!--  
+        <h2>Formulário</h2>
+        
+    <form action="destino.php" method="post">
+        
+    <label for="login">Login</label>    
+    <input type="text" id="login" name="login">    
+    
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha">
+  
+    <input type="submit" id="botao" value="Login">
+          
+        
+        
+        
+        
+    <!-- lista de formularios é com select 
+      <select name="estadoID" id="estadoID">
+        <option value="Rj">Rio de janeiro</option>
+        <option value="PN" selected>Pernambuco</option>
+        <option value="RGDS">Rio grande do sul</option>
+        <option value="BA">Baia</option>
+        
+        
+     </select>         
+      
+    </form>
+        -->
+    </body>
+</html>

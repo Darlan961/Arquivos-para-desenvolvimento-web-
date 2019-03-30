@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Unidade 02 - Elemento Head</title>
+        <meta charset="utf-8">
+        <meta name="author"  content="José Darlan"> <!-- o autor da pagina --> 
+        <meta name="generator" content="Brakets"> <!--o software que criou a pagina  -->  
+        <meta name="keywords" content="html5, curso online, css, java "> <!-- palavras chaves para o google ou outro navegador achar sua pagina --> 
+        <meta name="description" content="Pagina do curso de htma">    <!-- descrição da pagina --> 
+        <meta name="application-name" content="imedia Brasil">  <!-- -->         
+        
+        <meta http-equiv="refresh" content="3">  <!--  número sortiado a cada 3 segundos--> 
+        <script>
+             function sorteioNumero() {
+                       sorteio.innerHTML = Math.round(Math.random() * 50);
+                                         }    
+                       window.onload = sorteioNumero;
+        </script>
+        
+        
+        <style>
+            body {
+                background:White ; <!-- mudando a cor da pagina -->
+                font-family: sans-serif; <!-- tepo de letras na pagina -->
+                 color:black ; <!-- mudando a cor da letra assima da font -->
+                 }
+         </style>
+    </head>
+    <body>
+            <p id="sorteio"></p>
+    </body>
+</html>

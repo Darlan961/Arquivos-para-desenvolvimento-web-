@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+        
+     var sorteio;
+     var vetorMega = new Array();
+      
+    var i = 0;
+        while(i < 6){    
+        /*sorteio esta recebendo o arredondamento de um numero e o metodo que sorteia numeros de 1 a 60*/    
+            sorteio = Math.ceil(Math.random()*60);        
+         
+     /*indexOF é a comparação com o indice if o indice der -1 é porque o numero não ira se repetir, -1 é um indise que não existe em um vetor*/
+        if(vetorMega.indexOf(sorteio) < 0){
+            vetorMega.push(sorteio); /*adicionando numeros do sorteio no vetor */
+            i++;
+          }
+         }
+     function ordenarNumero(a,b){
+     return a-b;}/*Função para fazer a ordenação de numeros */        
+          
+     /*sort ordena stringd mais recebendo como parametro essa função e*/        
+     vetorMega.sort(ordenarNumero);
+            
+        console.log(vetorMega);    
+     
+            
+     alert("Hello,world")        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

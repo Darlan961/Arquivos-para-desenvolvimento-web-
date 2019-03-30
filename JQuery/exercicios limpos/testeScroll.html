@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Testando jquery Scroll </title>
+    </head>
+ <script src="jquery-3.2.1.min.js"></script>
+    
+    <style>     nav {
+				position: fixed;
+				width:78px;
+				padding:1px;
+				top:10px;
+				left:10px;
+
+					
+			}
+			
+        	nav ul { margin:0; padding:0; list-style:none }
+			nav li { 
+				list-style-type:none;  width:78px;  height:78px;
+			 	background-repeat:no-repeat;  margin-bottom:1px;
+				cursor:pointer; overflow: hidden;
+			}
+            ul li:first-child   { background-image: url(basquete.png);}
+            ul li:nth-child(2)  { background-image: url(futebol.png); margin-top: -1px;}
+            #elemento3:nth-child(3) { background-image: url(tenis.png); margin-top: -1px;}     
+            ul li:nth-child(4){background-image:url(b4.jpg);}      
+        
+        #primeiro   { width: 300px; height: 100px ; background-color: crimson; }   
+        #segundo    { width: 300px; height: 100px ; background-color: fuchsia; }   
+        #terceiro   { width: 300px; height: 100px ; background-color: chartreuse;}   
+        #quarto     {width: 300px; height: 100px; background-color:darkslateblue;}
+        
+    </style>
+    
+   <script>
+    
+       $(function(e){
+           var alturaPagina;
+           var larguraPagina;
+
+           alturaPagina = $(window).height();// variavel que recebe a altura da pagina
+           larguraPagina = $(window).width();  // variavel recebe a largura da pagina 
+          
+           $('#primeiro').css('height',alturaPagina); // preenche a altura da pagina sem precisar do css 
+           $('#segundo').css('height',alturaPagina);
+           $('#terceiro').css('height',alturaPagina);
+           $('#quarto').css('height',alturaPagina);
+           
+           $('#primeiro').css('width',larguraPagina); // Preenche a largura da pagina sem precisar de css
+           $('#segundo').css('width',larguraPagina);
+           $('#terceiro').css('width',larguraPagina);
+           $('#quarto').css('width',larguraPagina);
+           
+           
+           
+        $('li:first-child ').click(function(e){//clicando no primeiro filho e criando uma animação que sera de rola a pagina para cima 
+          $('html,body,nav').animate({scrollTop : $('#primeiro').offset().top},1000);        
+        });  //$('html,body,nav')--> onde acontecerá o evento 
+           
+        $('li:nth-child(2)').mouseover(function(e){// mouseover quando passar o mause por cima chama a função
+          $('html,body,nav').animate( {scrollTop: $('#segundo').offset().top});    
+        });   
+       
+        $('li:nth-child(3)').click(function(e){
+        $('html, body, nav ').animate({scrollTop: $('#terceiro').offset().top}); 
+        });
+           
+        $('li:last-child').click(function(e){
+        $('html, body, nav').animate({scroll : $('#quarto').offset().top });    
+            
+            
+        })   
+       
+       });
+    
+    </script>
+
+ 
+    <body>
+    
+    <nav> 
+       <ul>
+          <li id="elemento1"></li> 
+          <li id="elemento2"></li> 
+          <li id="elemento3"></li>
+          <li id="elemento4"></li>
+       </ul>    
+    </nav>    
+        
+    <div id="primeiro"></div>    
+    <div id="segundo"></div>    
+    <div id="terceiro"></div>    
+    <div id="quarto"></div>    
+    
+    </body>
+
+</html>
+    

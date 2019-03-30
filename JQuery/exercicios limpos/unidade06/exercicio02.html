@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        <style>
+			#janela { width:300px; height:300px; background-color:#069; margin-top:20px; margin-bottom: 20px; }
+			#janela2 { width:300px; height:300px; background-color:fuchsia; margin-top:20px;margin-bottom: 20px;}
+			#janela3 { width:300px; height:300px; background-color:cadetblue; margin-top:20px;}
+            
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function(e){
+             // Quando aperta o botão chama o evento click que chama a função e dentro dela
+             //tem o metodo de mostra e esconder o elemento  
+                
+            $('#mostrar').click(function(e){
+                $('#janela').show(); // show mostra o elemento
+            });    
+                
+            $('#esconder').click(function(e){
+                $('#janela').hide(); // hide esconde o elemento     
+                
+            });     
+              
+                
+                
+          $('#mostra').click(mostrando); // evento click recebendo como argumento uma função    
+          $('#esconde').click(esconde);
+                
+          function mostrando(e){ 
+              $('#janela2').show();    
+          };         
+          function esconde(e){
+              $('#janela2').hide();
+         };
+                
+         $('#botao').hover(mostra1, esconde1); // mostra e esconde elementos evento hove recebendo duas funções           
+         function mostra1(e){
+              $('#janela3').show();
+         };        
+         function esconde1(e){
+             $('#janela3').hide();
+         };         
+                
+            });
+            
+		</script>        
+    </head>
+
+    <body>
+        <input type="button" id="mostrar" 	value="Mostrar" />
+        <input type="button" id="esconder" 	value="Esconder" />
+        <div id="janela"></div>
+    
+        
+        <input type="button" id="mostra" value="mostra" />    
+        <input type="button" id="esconde" value="esconde" />    
+        <div id="janela2"></div>
+
+     
+      
+       <input type="button" id="botao" value="Mostra e esconde " /> 
+        <div id="janela3"></div>
+         
+    </body>
+
+</html>

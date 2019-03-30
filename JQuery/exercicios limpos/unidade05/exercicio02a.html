@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        <style>
+			#janela { position:absolute; top:20px; left:50px; width:200px; height:200px; background-color:#069; border:5px solid #000; padding:0 10px; }		
+        	#janelinha { position:absolute; top:10px; left:10px; width:50px; height:50px; background-color:#F00 } 
+        </style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function(e) {
+                // com o position() top sempre vai respeitar o elemento pai e mostra essa distância
+                console.log('Posicionamento da janela pai top : ' + $('#janela').position().top) ;
+                console.log('Posicionamento da janela pai left : ' + $('#janela').position().left) ;
+                
+                console.log('Posicionamento da janela filha top : ' + $('#janelinha').position().top);
+                console.log('Posicionamento da janela filha left :' + $('#janelinha').position().left);
+                
+                //com o offset()  vai mostra o posicionamento do elemento filho com relação a pagina e não ao seu elemento pai 
+                console.log('Posicionamento top com offset da janela filha : '+ $( ' #janelinha ' ).offset().top);
+                console.log('Posicionamento left com offset : ' + $('#janelinha').offset().left);
+                
+			});
+		</script>        
+    </head>
+
+    <body>
+		
+        <div id="janela">
+        
+        	<div id="janelinha"></div>
+        
+        </div>
+
+    </body>
+
+</html>

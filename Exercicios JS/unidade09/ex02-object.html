@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+
+         var pessoa = new Object();
+            
+        pessoa.nome = "Pedro";
+        pessoa.idade = 22;
+        pessoa.altural = 1.98;
+        console.log(pessoa);  
+            
+        function MostrarInfo(){
+            return " nome : " + this.nome;
+        }    
+            
+        pessoa.info = MostrarInfo;
+            
+            console.log(pessoa.info()); 
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

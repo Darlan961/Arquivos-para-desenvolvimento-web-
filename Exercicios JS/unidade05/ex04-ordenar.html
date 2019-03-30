@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var salada = new Array();
+            salada[0] = "Uva";
+            salada[1] = "Mamão";
+            salada[2] = "Pêra";
+            salada[3] = "Maçã";   
+           
+            // adicionando no ultimo elemento
+            salada.push("ABACATE");
+            
+            /*ordenando por ordem alfabetica*/
+            /*mais só ordena String e não numeros*/
+            salada.sort();
+               
+            /*Vai mostra o indice onde ABACATE está */
+            var indice = salada.indexOf("ABACATE");    
+           
+            console.log(indice);
+            
+            console.log(salada); 
+            
+            /*função que ordena numeros */
+            function oredenarNumeros(a,b){
+             return a-b;    
+            }
+            
+            var megacena = new Array(43,10,3,2,1,59);
+            
+           /*coloca o nume da função como parametros*/
+            megacena.sort(oredenarNumeros);
+            
+            console.log(megacena);
+            
+            
+            
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

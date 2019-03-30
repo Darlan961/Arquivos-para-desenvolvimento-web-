@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de EcmaScript 6.0</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script type="text/babel">
+        
+                var objeto = {
+                       tipo:"caneta",
+                       cor:"Azul",
+                       marca:"Bic",
+                       preço:2,
+                       tampas:["Redonda","Quadrada"]
+                }
+              
+                console.log(objeto.tipo);
+                console.log(objeto.tampas[1]);
+     
+ /*---------------------------------------------------------------*/           
+                /*Forma da que foi ensinada na aula*/
+                var  {tipo, cor, tampas}= {
+                       tipo:"caneta",
+                       cor:"Azul",
+                       marca:"Bic",
+                       preço:2,
+                       tampas:["Redonda","Quadrada"]
+                }
+              
+                console.log(tipo);
+                console.log(tampas[1])
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

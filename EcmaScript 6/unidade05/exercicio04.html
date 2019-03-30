@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de EcmaScript 6.0</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script type="text/babel">
+         
+        /*Jogador é um objeto e ele tem propriedades nome, habilidade 
+        que é um vetor, e ele tem um metodo */
+
+        var jogador = { /*Para falar com as propriedades de um objeto usa-se o this */
+            nome:"Messi",
+            habilidades:["chutar","Dribla","correr","Fazer gols"],
+            escreverHabilidades: function () {
+
+                var _this = this; // variavel recebendo as propriedades de this ;
+
+                                               /*forEach percorrendo as propriedades desse elemento*/
+                    this.habilidades.forEach ( function(habili){
+                
+                        console.log(_this.nome + " é craque em " + habili);
+                        
+                    });
+            }
+        }
+    
+                   jogador.escreverHabilidades();
+
+
+             
+
+
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

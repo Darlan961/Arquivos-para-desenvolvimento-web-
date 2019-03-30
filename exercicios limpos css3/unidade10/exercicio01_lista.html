@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        <style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:14px;
+            }
+            #apoio{
+                text-align: center;
+               font-family: fantasy;
+                font-size: 1.2em;
+           
+            }
+            
+            main{  height: 1000px; /*altura*/
+                  width: 960px;/*largura */
+                  margin: 0 auto;/*para centralizar*/
+                  box-shadow: 0 0 10px #000;/*sombriado*/}
+            /* so mechendo nos parâmetro da tag li ou seja li que esya dento de ul.primeira*/
+             ul.primeira li{
+                 list-style-image:  url(imagens/estrela.png);/* colocando uma imagem*/
+                 background-color: fuchsia; /*tipo de ordenação da lista*/
+                 padding: 10px;/*espaçamento interno*/
+                 box-shadow: 0 0 10px #000;/*sombriado*/
+            } 
+            ol.segunda li{
+                list-style-type: circle;/*tipo de ordenação*/
+                background-color: bisque; /*cpr*/
+                padding: 10px;/*espaçamento interno */
+            }      
+            ul.terceira li{
+                list-style-type: lower-alpha;
+                background-color: burlywood;
+                padding: 5px;
+            }
+            /*So mechendo com a class ol.quarta ou seja ou parametro vai entrar na lista topa porque está dentro da tag <ol> */
+            ol.quarta{
+                list-style-type: georgian;
+                margin-top: 30px;/*dando uma margem para o elemento acima*/
+            
+            }
+         </style>
+    </head>
+  
+    <body>
+         <div id="apoio"><h2>Tabelas CSS3</h2> </div>         
+        <main>
+            <ul class="primeira">
+                <li>Brasil</li>
+                <li>Portugal</li>
+                <li>Angola</li>
+                <li>Moçambique</li>
+                <li>Cabo Verde</li>
+            </ul>
+
+            <ol class="segunda">
+                <li>Brasil</li>
+                <li>Portugal</li>
+                <li>Angola</li>
+                <li>Moçambique</li>
+                <li>Cabo Verde</li>
+            </ol> 
+            
+            
+            <ul class="terceira">
+               <li>Flamengo</li>
+               <li>Vasco</li>
+               <li>Palmeiras</li>
+               <li>Atletico</li>
+               <li>Vitoria</li> 
+            </ul>
+
+        <ol class="quarta">
+            <li>Home</li>    
+            <li>Fotos</li>    
+            <li>Localização</li>    
+            <li>Ofertas</li>    
+            <li>Produtos</li>    
+        </ol> 
+            
+      </main>
+ </body>
+</html>

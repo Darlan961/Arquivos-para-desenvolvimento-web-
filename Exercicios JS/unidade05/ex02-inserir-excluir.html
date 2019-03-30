@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var salada = ["Uva","Banana","Pera"] ;
+       
+        //adicionar no inicio
+        salada.unshift("Laranja");    
+            
+        //metodo push insere no final
+        salada.push("Mamão");
+        
+        //retira o ultimo elemento
+        salada.pop(); 
+            
+        //retira o primeiro    
+        salada.shift();
+        
+        console.log(salada);
+        console.log("tamanho do array "+salada.length); 
+        
+        
+        var comida = new Array();     
+        
+         comida[0] = "Arroz";
+         comida[1] = "Feijão";
+         comida[3] = "carne";
+            
+        console.log(comida);    
+        
+        //insere no final
+        comida.push(1123);
+        // tamanho do array
+        console.log(comida.length);
+            
+        // acessando e mostrando o indice que esta o feijão    
+        var indice = comida.indexOf("Feijão"); 
+            
+         console.log(indice);    
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

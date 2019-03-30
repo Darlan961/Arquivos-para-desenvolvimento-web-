@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <style>
+			body { font-family:Arial, Helvetica, sans-serif; font-size:0.9em; background-color: bisque; }
+			li { padding:5px;margin-bottom:1px;  }
+            ul{list-style-type: none; }
+			.vermelho { color:#F00; text-decoration: none; }
+			.verde { color:#096 }
+            #elementos ul li{
+                padding: 20px;
+                margin:0 auto ;
+                width: 250px;
+                margin-bottom: 5px;
+                box-shadow: 0 0 5px #000000;
+            }
+            
+            
+		</style>
+
+		<script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+                // EXEMPLOS DE COMO APLICAR JQUERY 
+                 
+                $(" li[class='vermelho'][title='curso']").css("background-color","#FF0000").css("color","#48D1CC");
+                $("li[class='verde']").css("background-color","#00FF00");
+                $(" li.texto1 ").css("background-color","#0000FF");
+                $(" li.texto2 ").css("background-color","#F4A460");
+                $(" li.texto3 ").css("background-color","#0000FF");
+                
+                
+				$(" li[id='texto1'] ").css("background-color","#FFB6C1");
+				$(" li[id='texto2'] ").css("background-color","#FF9");
+                $(" li[id='texto5'] ").css("background-color","#0000FF");
+                $(" li[id='texto6'] ").css("background-color","#00FF00");
+                $(" li[id='texto7'] ").css("background-color","#F4A460");
+                
+                $(" li.texto12 ").css("background-color","#993399");
+                
+               
+              alert("Dentro das tags ul li contem " + $("ul li").length + " elementos");
+            });
+            
+        
+		</script>
+    </head>
+
+    <body>
+      <div id="elementos">
+    	<ul>
+            <li class="vermelho" title="curso"> <a href="texto.html">Curso HTML5 Essencial</a></li>
+            <li class="verde">Curso CSS3 Essencial</li>
+            <li class="texto1">Curso de java</li>
+            <li class="texto2">Curso de C++</li>
+            <li class="texto3">Curso de Gimp</li>
+            
+            <li id="texto1">Curso Javascript Essencial</li>
+            <li id="texto2" title="Esse curso">Curso jQuery Fundamental</li> 
+            <li id="texto5">Curso de Ajax</li>
+            <li id="texto6">Curso de PHP</li>
+            <li id="texto7">Curso de Banco de Dados</li>
+            
+            <li id="texto10">Curso Javascript Essencial</li>
+            <li id="texto11" title="Esse curso">Curso jQuery Fundamental</li> 
+            <li class="texto12">Curso de Ajax</li>
+            <li class="texto13">Curso de PHP</li>
+    
+        </ul>
+     </div>      
+    </body>
+</html>

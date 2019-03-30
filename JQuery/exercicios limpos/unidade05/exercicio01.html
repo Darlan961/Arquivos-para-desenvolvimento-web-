@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        <style>
+			#janela { width:200px; height:1000px; background-color:#069; border:5px solid #000 }
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+     jQuery(document).ready(function() {
+         // altura da janela e não do elemento     window -> janela
+        console.log("A altura da minha janela é de : " + $(window).height());
+        //largura da janela   altura e largura diminuem de acordo com a pagina sendo redimencionada; 
+        console.log("A lagura da minha janela é de : "+ $(window).width()); 
+        
+        //Altura do elemento da panina                 document -> documento;   
+        console.log("A altura do meu elemento é : " + $(document).height());
+        console.log("A altura do elemento é : " + $(document).width());
+        
+        $("a").attr("title", "link");
+        $("li a[href$='.html']").after(" <*>") ;
+        $("h2").html("Tenxto inserido via jquery");
+        $("ul").append("<li>INSERINDO</li>"); 
+        $("ul").prepend("<li>INSERINDO</li>"); 
+        
+        $("ul.cursos li:nth(2)").replaceWith("Substituido")
+        $("ul").wrapAll("<div style='border: 5px solid #Ccc'> </div> ");  
+        
+         
+			});
+		</script>        
+    </head>
+
+    <body>
+		
+        <div id="janela">
+        
+        </div>
+        
+        <h2></h2>
+      <ul class="cursos">  
+          <li><a href="curso1.html">Curso de html5</a></li>    
+          <li>Curse de css 3 </li>    
+          <li>Curso de javascript</li>    
+          <li>Curso de jquery</li>    
+      </ul>     
+        
+        
+    </body>
+
+</html>

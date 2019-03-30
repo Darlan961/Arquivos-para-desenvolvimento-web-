@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso de EcmaScript 6.0</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script type="text/babel">
+    
+   /*Exemplo de uma constante e uma variável com o mesmo nome 
+   pode serem declaradas e usadas mais" NÃO PODEM SER DECLARADAS
+   NO MESMO ESCOPO SE NÃO DARÁ ERRO "*/
+
+       const NASCIMENTO = 1999 ;
+       
+        function calcularIdade(anoAtual) {
+            var NASCIMENTO = 2000; 
+            return anoAtual - NASCIMENTO; 
+        }
+     
+       var ano = calcularIdade(2018)
+        console.log(ano);
+        
+
+
+        </script>
+    </head>
+    <body>
+    <!---TRABALHANDO COM CONSTATES -->
+    <!-- BOA PRÁTICA É SEMPRE USAR O NOME DE UMA CONSTATE 
+     COM LETRAS MAIÚSCULAS  -->
+
+
+    </body>
+</html>

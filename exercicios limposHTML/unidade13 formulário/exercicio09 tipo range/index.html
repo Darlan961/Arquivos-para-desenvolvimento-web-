@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso HTML5 Essencial</title>
+    </head>
+
+  <script>
+    Function mostrarResultado() {
+    document.getElementById("resultado").innerHTML= document.getElementById("filhos").Value;
+         
+    }
+      
+    </script>   
+    <body>
+        <!--esse tipo range é uma barinha que arrata-->
+        <form action="index.html" method="post">
+        <input type="range" id="filhos" min="1" onchange="mostrarResultado()" max="15" value="1"> 
+         <!-- teg não muito definida-->   
+        <span id= "resultados">
+            
+            
+            
+        </span>    
+           
+            
+            
+            
+        </form>
+    </body>
+</html>

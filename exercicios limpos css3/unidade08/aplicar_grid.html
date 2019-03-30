@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            body {
+                background:rgb(229,229,229);
+            }
+
+            article, aside, section, header, footer, nav {
+                display:block;
+            }
+
+            main {/*tag principal */
+                width: 960px;
+                margin: 0 auto;
+                height: 3000px;
+                box-shadow: 0 0 10px #000000;
+                background-color:floralwhite;
+            }
+
+            header {/*cabeçalho da pagina */
+                width: 960px;
+                height:110px;
+                background-color: #FF7F00;
+
+            }
+
+            nav {/*elementos de navegação */
+                width: 960px;
+                height: 40px;
+                background-color: #B28500;
+
+            }
+
+            .conteudo {/*class conteudo*/
+              float: left;/*flutuando para esquerda*/
+               width: 640px;/*largura*/
+               height: 350px;/*altura*/
+               background-color:#FFD24d;/*cor*/  
+               margin-top: 10px;/*margem para cima */
+            }
+
+            .apoio {/*class apoio*/
+                width: 310px; /*largura*/
+                height: 350px;/*altua*/
+                background-color: #B0C4DE;/*cor*/
+                float: right;/*flutuando a direita*/
+                margin-top: 10px;/*margem para cima*/
+                margin-bottom: 15px; /*margem para baixo */
+            }
+
+            footer {
+                    width: 960px;/*largura*/
+                    text-align: center;/*alinhando texto*/
+                    height: 50px;/*altura*/
+                    background-color: #A9A9A9;/*cor*/
+                    clear: both; /*ajeitando rodapé ou seja nemhum elemento a sua direita nem esquerda*/
+                    margin-bottom: 15px; /*margem para baixo */
+                    
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header></header>
+            <nav></nav>
+
+            <section class="conteudo"></section>
+            <section class="apoio"></section>
+
+            <footer>Endereco, telefone e outras informacoes</footer>
+        </main>
+    </body>
+</html>

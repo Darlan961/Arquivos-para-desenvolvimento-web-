@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            //INSERIR INFORMAÇÕES NAS TAGS
+			
+            $( function(e) {
+                
+                $("h3").html("Curso front-end")
+                
+                //Adicionando um novo li ao ul com um texto e esse elemento irá para o final da lista  
+                $("ul#listacursos").append("<li> Curso Bootstrap Fundamental </li>");
+                
+                //Esse elemento irá para o começo da lista 
+                $("ul#listacursos").prepend("<li> Curso de PHP </li>");
+                $("ul#listacursos").prepend("<li>Curso de JAVA</li>");
+            
+                $("#listacursos li a[href$='.zip']").after("<img src = 'imagem/icon_zip.gif'>");
+                $(" #listacursos li a[href$='.pdf'] ").before(" <img src = 'imagem/icon_pdf.gif'> " );
+              
+                alert("A pagina tem " + ( "h1" ).length + " elementos ");
+                
+                $("ul li.cor").css("background-color","#ff0000" ).css("color","#C71585");
+                
+                
+                
+			} )
+		</script>
+        
+    </head>
+
+    <body>
+    	<h1> </h1>
+        
+        <h3> </h3>
+    
+		<ul id="listacursos">
+            <li><a href="curso.zip">Curso HTML5 Essencial</a></li>
+            <li><a href ="curso2.pdf">Curso CSS3 Essencial</a></li>
+            
+            <li class="cor">Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+
+    </body>
+
+</html>

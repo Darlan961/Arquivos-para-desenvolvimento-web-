@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+          <style>
+        
+           
+        
+        
+         </style>
+    </head>
+
+    <body>
+    	<nav class="paises1">
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+
+        
+        
+        
+        
+         <a href="#">Colombia</a>
+         <a href="#">Paraguai</a>
+        
+        <h1>Pagina teste do curso de Jquery </h1>
+        
+        
+        <!-- Vai acontecer após a panina ser carregada -->
+        <!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+    
+        <script>
+                                        /*só conta os elementos a que estão dentro de nav e da um alerta*/  
+            alert("Dentro da tag nav contem " + $("nav a").length + " elementos");
+            
+        	 $( function() {
+              
+             $("nav a:even").css("color","red").css("text-decoration","none").css("display","block");
+               
+             $("h1").css("color","red");  
+            })
+          
+            
+        </script>   
+        
+                
+    </body>
+</html>

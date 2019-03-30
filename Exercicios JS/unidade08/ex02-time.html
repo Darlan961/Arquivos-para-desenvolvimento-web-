@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+         
+            
+    /*Essa função está recebendo como parâmetro o tempo ou seja se o tempo for menor que 10 concatene com 0 para ficar dois digitos*/        
+            function doisDigitos(juntar){
+                if(juntar < 10){
+                    return "0" + juntar;
+                }
+                else{
+                    return juntar;
+                }
+            }
+            
+         var tempo = new Date();
+         
+            /*função recebendo como parametro tempo*/
+        console.log( doisDigitos(tempo.getHours()) + ":"+ doisDigitos(tempo.getMinutes())       )   ; 
+            
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

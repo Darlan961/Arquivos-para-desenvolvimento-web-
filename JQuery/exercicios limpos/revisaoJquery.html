@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html>
+    <head>
+       <title> Revisão Jquery </title>
+      <meta charset="utf-8">
+    
+     <style>
+         main{ width: 950px; height: 1000px; margin: 0 auto; border: 1px solid; box-shadow: 0 0 5px #000;}
+          
+        ul{ list-style-type: none; }
+        
+       .texto { width: 400px; height: 100px; border: 3px solid "Ccc";background-color: cadetblue;    overflow: auto; margin-bottom: 30px;}
+        
+        .janela{ height: 200px; width: 300px;  background-color: burlywood; margin-left: 30px; border: 1px solid  #000; padding: 10px; position: absolute; box-shadow: 0 0 5px #000; float: left;}
+        .janelinha{height: 60px; width: 60px; background-color:darkmagenta;}
+     
+         #janela2{width: 200px; height: 200px; border: 1px solid #000 ; float: right;}
+         
+         .botao{ float: right; margin-right: 10px;}
+         
+         
+         
+    </style>
+            
+        
+    <script src="jquery-3.2.1.min.js"></script>    
+    <script>
+     
+    $(function(e){
+    
+    //TRABALHANDO COM EVENTOS    
+   
+    $('#cursohtml').click(function(e){
+        alert('Clicou no botão '); // evento click quando clica no botão a função é chamada 
+    });
+        
+  $('#curso2').mouseover(function(e){ // mouseover quando passa o mause por cima do elemento a função é chamanda 
+     
+      alert('passou mause por cima !!!');
+  });
+        
+   function mostramensagem(e){  // função que faz para o evento e mostra esse evento apenas 1 vez 
+        alert('Mostra 1 vez'); 
+        $('#curso3').off('mouseover', mostramensagem); 
+   }        
+    $('#curso3').on('mouseover', mostramensagem); // chamada do metodo ou função 
+    
+        
+    $('#imagem').hide(); //escondendo a imagem    
+    $('#esconde').click(function(e){
+         $('#imagem').hide(); // esconde o elemento quando clica no botão
+   }); 
+  
+  $('#mostra').click(function(){
+      $('#imagem').show(); // mostra o elemento qunado clica no botão 
+      
+  });
+        
+    //------------------------------------------------------------------------------------------------------------------    
+        
+        
+  //alert("Essa pagina tem " + $(" li ").length + " elementos " );
+        
+    $("h2").html("Curso de Jquery "); //inserindo um texto na tag h2 
+    $("ul").prepend("<li>Elemento inserido1</li>");//insetindo um novo li no começo de ul    
+    $("ul").append("<li>Elemento inserido</li>");  // inserindo li no final de ul  
+       
+    $("li a[href$='.html']").after(" <*> "); // Na frente  
+    $("li a[href$='.html']").before(" <*> "); // poderia ser uma imagem, inserindo onde termina em .html    
+    $("a").attr("title","LINK");    
+        
+    $(" li:nth(1) ").replaceWith("<li>Novo curso</li>");// substitui elementos    
+      
+    console.log("A altura da minha pagina é :" + $(window).height());// altura da janela
+        
+    console.log("A largura da minha pagina é: " +$(window).width()); // largura da janela
+     // se fosse document dava a largura do elemento da pagina    
+        
+    console.log(' janela left  : ' + $('.janela').position().left);
+    //posicição ao seu elemento pai 
+        
+    console.log('janelinha top :'+$('.janelinha').offset().top);
+    //posição da janelinha em relação a pagina e não ao seu elemento pai 
+        
+    $('.janelinha').offsetParent().css("background-color","blue");
+    //  Modificando a cor do elemento pai. offsetParent() --> Metodo modifica o elemento pai     
+        
+        
+    //USANDO UMA UNICA FUNÇÃO PARA MODIFICAR A COR DE UM ELEMENTO 
+    //PASSANDO PARÂMETRO ATRAVEZ DE UM EVENTO
+        
+    function mudarCor(e){ // parâmetro e podia ser qual quer nome
+        $cor = e.data.cor; // variavel cor recebendo , data é dados
+        $largura = e.data.largura; // variavel $largura
+        
+        $('#janela2').css('background-color',$cor);
+        $('#janela2').css('width', $largura);
+    }; 
+                                        // 2 parâmetros
+                                       // parâmetro cor e largura
+    $('#botaovermelho').on('click' , { cor: 'red', largura : '150px' } , mudarCor );    
+    $('#botaoazul').on('click' , {cor: 'blue' , largura : '250px'} , mudarCor );    
+    $('#botaoverde').on('click' , {cor: 'green' , largura : '350px'} , mudarCor );    
+        
+        
+    });       
+   </script>
+        
+    </head>
+    
+    
+<body>
+    
+    
+  <main>    
+    <input type="button" id="cursohtml" value="Curso HTML5" /> 
+    <input type="button" id="curso2" value="Curso de CSS"/>
+    <input type="button" id="curso3" value= "Curso de Jquery"/>
+    <input type="button" id="curso4" value = " Curso Bootstrap " />
+    
+    <input type="button" id="esconde" value="esconder curso" />
+    <input type="button" id="mostra" value="Mostra curso" />
+     
+    <div id="imagem">
+         <img src="fotojquery.png" height=" 50%" width="50%">
+    </div>
+    
+    
+    <h2 class="titulo"></h2>
+    
+    <ul class="cursos">
+        <li>Curso de HTML5</li>
+        <li>Curso de CSS3</li>
+        <li><a href="curso.html">Curso de Janascript</a></li>
+        <li>Curso de Bootstrap</li>
+    </ul>
+    
+  <div class="texto">
+    <p>Um dia descobrimos que beijar uma pessoa para esquecer outra, é bobagem. 
+        Você não só não esquece a outra pessoa como pensa muito mais nela...    
+        Um dia nós percebemos que as mulheres têm instinto "caçador" e fazem qualquer homem sofrer ... 
+        Um dia descobrimos que se apaixonar é inevitável... 
+        Um dia percebemos que as melhores provas de amor são as mais simples... 
+        Um dia percebemos que o comum não nos atrai...
+        
+    </div>
+      
+        <h3>Janela</h3> 
+    <div class="janela">
+        <div class="janelinha"> </div>
+        <h3>JANELINHA</h3>
+    </div> 
+    
+    
+    
+    <div id="janela2"> </div>
+    
+      <section class="botao">
+        <input type="button" id="botaovermelho" value="Vermelho"/>
+        <input type="button" id="botaoazul" value= " Azul "/>
+        <input type="button" id="botaoverde" value = " Verde " />
+    </section> 
+      
+ </main>      
+</body>    
+    
+</html>
